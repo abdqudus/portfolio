@@ -4,6 +4,11 @@
 /node_modules
 /.pnp
 .pnp.js
+package-lock.json
+
+# tailwind
+tailwind.config.js
+postcss.config.js
 
 # testing
 /coverage
@@ -33,3 +38,4 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+tsconfig.json
