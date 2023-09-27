@@ -2,8 +2,8 @@ export default function RotatingSection() {
   let string = "A b d Q u d u s * G b a d a m o s i* ";
 
   return (
-    <div className="lg:mt-0 mt:4 flex justify-between items-center">
-      <div className="spin">
+    <div className="lg:mt-0 mt:4 flex justify-between items-center px-4">
+      <div className="spin ">
         <div className=" relative h-[100px] w-[100px] animate-spin-slow">
           {string.split("").map((s: string, i: number) => (
             <span

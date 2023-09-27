@@ -35,7 +35,7 @@ function FrontEnd() {
   }, [scrollY, controlElement1, controlElement2]);
 
   return (
-    <section className="px-8 lg:-mt-16 text-[#e5e7eb] cursor-default">
+    <section className="px-8  mt-20 text-[#e5e7eb] cursor-default">
       {/* flex container */}
       <motion.div
         initial={{ opacity: 0 }}
@@ -45,7 +45,7 @@ function FrontEnd() {
       >
         {/* flex item 1 */}
         <motion.h1
-          className="hover:text-orange-300 scroll-animated-element  -mb-12 font-bold tracking-wide text-[25vw] md:text-[10.5rem] "
+          className="hover:text-orange-300 scroll-animated-element -mb-12 font-bold tracking-wide text-[25vw] md:text-[10.5rem] "
           initial={{ x: 0 }}
           animate={controlElement1}
         >
