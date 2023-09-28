@@ -1,22 +1,25 @@
 import React from "react";
-import { croissant } from "@/app/layout";
+import { links } from "@/lib/data";
+import Link from "next/link";
 const Navbar = () => {
   return (
-    <nav className="flex backdrop:blur-md px-6 bg-[#e5e7eb] fixed top-0 w-full z-4 mb-0 justify-between p-8  items-center">
-      <p
-        className={`${croissant.className} text-black text-2xl animate-drop font-[400] uppercase md:font-[48]`}
-      >
-        AbdQudus
-      </p>
-      <div className="flex flex-col gap-3">
-        <span className="w-[40px] h-[2px] bg-black"></span>
-        <span className="w-[40px] h-[2px] bg-black"></span>
-      </div>
-      <p
-        className={`${croissant.className} text-black  hidden animate-drop sm:block`}
-      >
-        Time
-      </p>
+    <nav
+      className="
+      bg-[#FCE09B] fixed top-0 w-full backdrop:blur-md animate-drop z-10
+      flex justify-center items-center p-4
+      sm:w-[70%] sm:max-w-[700px] sm:left-1/2 sm:-translate-x-1/2 sm:top-8
+      sm:rounded-[4rem] sm:animate-dropLarge
+    "
+    >
+      <ul className="flex sm:justify-between sm:w-full sm:px-2 justify-center items-center gap-3 flex-wrap">
+        {links.map((link) => (
+          <Link key={link.hash} href={link.hash}>
+            <li className="text-[#186F65] text-[1.2rem] hover:text-[#B2533E] transition">
+              {link.name}
+            </li>
+          </Link>
+        ))}
+      </ul>
     </nav>
   );
 };

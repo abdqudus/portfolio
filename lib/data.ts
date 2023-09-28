@@ -8,6 +8,7 @@ import {
   SiNextdotjs,
   SiFirebase,
 } from "react-icons/si";
+import { BsGithub } from "react-icons/bs";
 type Tech = {
   readonly name: string;
   readonly icon: IconType;
@@ -21,4 +22,29 @@ export const technologies: readonly Tech[] = [
   { name: "react", icon: FaReact },
   { name: "next js", icon: SiNextdotjs },
   { name: "Firebase", icon: SiFirebase },
+  { name: "github", icon: BsGithub },
+] as const;
+
+export const links = [
+  {
+    name: "Home",
+    hash: "#home",
+  },
+  {
+    name: "About",
+    hash: "#about",
+  },
+  {
+    name: "Projects",
+    hash: "#projects",
+  },
+  {
+    name: "Skills",
+    hash: "#skills",
+  },
+
+  {
+    name: "Contact",
+    hash: "#contact",
+  },
 ] as const;

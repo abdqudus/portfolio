@@ -21,10 +21,15 @@ const config: Config = {
           "0% ": { opacity: "0", transform: "translateY(-20px)" },
           "100%": { opacity: "1", transform: "translateY(0)" },
         },
+        dropLarge: {
+          "0% ": { opacity: "0", transform: "translate(-50%,-20px)" },
+          "100%": { opacity: "1", transform: "translate(-50%,0)" },
+        },
       },
       animation: {
         "spin-slow": " spin 4s linear infinite",
-        drop: "drop linear .75s",
+        drop: "drop ease-in .25s",
+        dropLarge: "dropLarge ease-in .25s",
       },
     },
   },
