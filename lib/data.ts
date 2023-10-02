@@ -64,7 +64,7 @@ export const projects: readonly Project[] = [
     title: "letsChat",
     src: letsChat,
     description:
-      "This is a simple chat app that enables users send and receive messages in real time. It also has some other cool features.",
+      "This is a simple chat app that enables users send and receive messages in real time.",
     address: "https://abdquduschatapp.netlify.app/",
   },
   {
