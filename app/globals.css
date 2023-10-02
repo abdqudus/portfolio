@@ -24,10 +24,12 @@ html {
 .swiper-button-next {
   position: absolute !important;
 }
-
+.swiper-pagination-bullet-active {
+  background: #fce09b !important;
+}
 @media (max-width: 640px) {
   .swiper-slide {
     padding-inline: 2em;
-    padding-block: 1em;
+    padding-bottom: 2.5em;
   }
 }
