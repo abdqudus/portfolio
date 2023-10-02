@@ -7,9 +7,7 @@ const Projects = () => {
   return (
     <SectionComponent>
       <SectionHeader title="my previous projects" />
-      <div className=" mt-8 relative w-full md:w-[95%] h-[250px] flex items-center justify-center  mx-auto">
-        <ProjectSlider projects={projects} />
-      </div>
+      <ProjectSlider projects={projects} />
     </SectionComponent>
   );
 };

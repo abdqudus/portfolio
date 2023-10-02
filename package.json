@@ -18,6 +18,7 @@
     "react-dom": "latest",
     "react-icons": "^4.11.0",
     "react-slick": "^0.29.0",
+    "swiper": "^10.3.1",
     "tailwindcss-classnames": "^3.1.0"
   },
   "devDependencies": {
