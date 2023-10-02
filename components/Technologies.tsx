@@ -1,9 +1,10 @@
 import React from "react";
 import { technologies } from "../lib/data";
 import SectionHeader from "./SectionHeader";
+import SectionComponent from "./SectionComponent";
 const Technologies = () => {
   return (
-    <section className="mt-16">
+    <SectionComponent id="skills">
       <SectionHeader title="Technologies i use" />
       <div className="flex  justify-center px-8 pb-8 mt-16 gap-8 flex-wrap ">
         {technologies.map((tech) => (
@@ -20,7 +21,7 @@ const Technologies = () => {
           </div>
         ))}
       </div>
-    </section>
+    </SectionComponent>
   );
 };
 

@@ -43,23 +43,25 @@ const Intro = () => {
           <a href="#contact">Download My CV</a>
           <BsDownload size={30} />
         </div>
-        <div className="w-[60px] hover:bg-[#B5CB99]  cursor-pointer h-[60px] rounded-full bg-[#FCE09B] justify-center items-center flex hover:scale-[1.2] transition ">
-          <a
-            href="https://www.linkedin.com/in/abdqudus-gbadamosi/"
-            target="_blank"
-            title="Reach me on LinkedIn"
-          >
-            <BsLinkedin size={30} color={"#186F65"} />
-          </a>
-        </div>
-        <div className="w-[60px] cursor-pointer h-[60px] hover:bg-[#B5CB99] rounded-full bg-[#FCE09B] justify-center items-center flex hover:scale-[1.2] transition ">
-          <a
-            href="https://github.com/abdqudus"
-            target="_blank"
-            title="Check out my github"
-          >
-            <FaGitSquare size={30} color={"#186F65"} />
-          </a>
+        <div className="flex gap-6">
+          <div className="w-[60px] hover:bg-[#B5CB99]  cursor-pointer h-[60px] rounded-full bg-[#FCE09B] justify-center items-center flex hover:scale-[1.2] transition ">
+            <a
+              href="https://www.linkedin.com/in/abdqudus-gbadamosi/"
+              target="_blank"
+              title="Reach me on LinkedIn"
+            >
+              <BsLinkedin size={30} color={"#186F65"} />
+            </a>
+          </div>
+          <div className="w-[60px] cursor-pointer h-[60px] hover:bg-[#B5CB99] rounded-full bg-[#FCE09B] justify-center items-center flex hover:scale-[1.2] transition ">
+            <a
+              href="https://github.com/abdqudus"
+              target="_blank"
+              title="Check out my github"
+            >
+              <FaGitSquare size={30} color={"#186F65"} />
+            </a>
+          </div>
         </div>
       </div>
     </section>

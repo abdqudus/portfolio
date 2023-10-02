@@ -5,7 +5,7 @@ import SectionHeader from "./SectionHeader";
 import SectionComponent from "./SectionComponent";
 const Projects = () => {
   return (
-    <SectionComponent>
+    <SectionComponent id="projects">
       <SectionHeader title="my previous projects" />
       <ProjectSlider projects={projects} />
     </SectionComponent>

@@ -1,10 +1,14 @@
 import React from "react";
 type Props = {
   children: React.ReactNode;
+  id: string;
 };
-const SectionComponent = ({ children }: Props) => {
+const SectionComponent = ({ children, id }: Props) => {
   return (
-    <section className="my-12 px-8 py-4 leading-normal max-w-[60rem] md:mx-auto">
+    <section
+      id={id}
+      className="my-12 transition px-8 py-4 leading-normal max-w-[60rem] md:mx-auto"
+    >
       {children}
     </section>
   );

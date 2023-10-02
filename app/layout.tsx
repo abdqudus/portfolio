@@ -26,7 +26,7 @@ export default function RootLayout({
     <html lang="en">
       <body
         className={`${kanit.className}
-         min-h-[300vh] py-5 overflow-x-hidden bg-[#186F65] text-white `}
+         min-h-[300vh] className="scroll-smooth" py-5 overflow-x-hidden bg-[#186F65] text-white `}
       >
         {children}
       </body>

@@ -1,4 +1,5 @@
 import About from "@/components/About";
+import Home from "@/components/Home";
 import Intro from "@/components/Intro";
 import Projects from "@/components/Projects";
 import Technologies from "@/components/Technologies";
@@ -8,8 +9,7 @@ import React from "react";
 const App = () => {
   return (
     <div>
-      <Header />
-      <Intro />
+      <Home />
       <About />
       <Technologies />
       <Projects />
