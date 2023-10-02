@@ -25,7 +25,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${kanit.className} min-h-[300vh]  bg-[#186F65] text-white `}
+        className={`${kanit.className} min-h-[300vh] overflow-x-hidden bg-[#186F65] text-white `}
       >
         {children}
       </body>

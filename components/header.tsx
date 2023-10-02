@@ -6,8 +6,6 @@ const Header = () => {
   return (
     <header className="overflow-hidden ">
       <Navbar />
-      {/* <FrontEnd /> */}
-      {/* <RotatingSection /> */}
     </header>
   );
 };

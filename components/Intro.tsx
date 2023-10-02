@@ -6,16 +6,17 @@ import { BsDownload, BsLinkedin } from "react-icons/bs";
 import { FaGitSquare } from "react-icons/fa";
 
 import Link from "next/link";
-import { color } from "framer-motion";
 const Intro = () => {
   return (
     <section className="mt-[9rem] w-[80%] md:w-[65%] m-auto">
-      <div className=" border-[#FCE09B] border-4 relative rounded-full w-[200px] h-[200px] my-6  mx-auto ">
+      <div className="border-[#FCE09B] border-4 relative rounded-full w-[200px] h-[200px] my-6  mx-auto ">
         <Image
           className="rounded-full object-cover "
           src="/fjxow.jpg"
           width={200}
           height={200}
+          quality="95"
+          priority={true}
           alt="my profile picture"
         />
         <p className="absolute bottom-0 right-2 text-[2.5rem]">👋</p>
@@ -30,8 +31,8 @@ const Intro = () => {
         <span className="font-semibold tracking-wider">
           frontend developer.
         </span>{" "}
-        I enjoy building beautiful and performant websites. My focus -for now-
-        is React and Next.js.
+        I enjoy building beautiful, performant, responsive and accessible
+        websites. My focus -for now- is React and Next.js.
       </h1>
       <div className="flex flex-col mt-6 gap-6 items-center justify-center sm:flex-row sm:flex-wrap">
         <div className="px-6 py-3 bg-[#FCE09B] hover:bg-[#B5CB99]  text-[#186F65] flex justify-center items-center gap-2 hover:scale-[1.2] transition rounded-full font-semibold text-[1rem] sm:text-[1.2rem] ">

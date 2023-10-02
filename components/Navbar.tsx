@@ -5,7 +5,7 @@ const Navbar = () => {
   return (
     <nav
       className="
-      bg-[#FCE09B] fixed top-0 w-full backdrop:blur-md animate-drop z-10
+      bg-[#FCE09B] fixed top-0 w-full opacity-90 animate-drop z-10 backdrop-blur-[1rem]
       flex justify-center items-center p-4
       sm:w-[70%] sm:max-w-[700px] sm:left-1/2 sm:-translate-x-1/2 sm:top-8
       sm:rounded-[4rem] sm:animate-dropLarge

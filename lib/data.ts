@@ -1,6 +1,9 @@
 import { IconType } from "react-icons";
 import { FaHtml5, FaReact } from "react-icons/fa";
 import { IoLogoCss3 } from "react-icons/io";
+import letsChat from "../public/chat-app.png";
+import easyShare from "../public/easy-share.png";
+import crown from "../public/crown.png";
 import {
   SiTailwindcss,
   SiJavascript,
@@ -9,9 +12,16 @@ import {
   SiFirebase,
 } from "react-icons/si";
 import { BsGithub } from "react-icons/bs";
+import { StaticImageData } from "next/image";
 type Tech = {
   readonly name: string;
   readonly icon: IconType;
+};
+export type Project = {
+  title: string;
+  src: StaticImageData;
+  description: string;
+  address: string;
 };
 export const technologies: readonly Tech[] = [
   { name: "HTML5", icon: FaHtml5 },
@@ -35,16 +45,40 @@ export const links = [
     hash: "#about",
   },
   {
-    name: "Projects",
-    hash: "#projects",
-  },
-  {
     name: "Skills",
     hash: "#skills",
+  },
+  {
+    name: "Projects",
+    hash: "#projects",
   },
 
   {
     name: "Contact",
     hash: "#contact",
+  },
+] as const;
+
+export const projects: readonly Project[] = [
+  {
+    title: "letsChat",
+    src: letsChat,
+    description:
+      "This is a simple chat app that enables users send and receive messages in real time. It also has some other cool features.",
+    address: "https://abdquduschatapp.netlify.app/",
+  },
+  {
+    title: "easy share",
+    src: easyShare,
+    description:
+      "This is an app that enables a users upload files and then gets link that allows for the download of the file.",
+    address: "https://abdqudus-easyshare.netlify.app/",
+  },
+  {
+    title: "crown clothing ",
+    src: crown,
+    description:
+      "An e-commerce app that allows users check wears they like and also add them to add to cart ",
+    address: "https://crown-cloth-store.netlify.app/",
   },
 ] as const;

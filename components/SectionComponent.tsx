@@ -1,8 +1,10 @@
 import React from "react";
-
-const SectionComponent = ({ children }: { children: React.ReactNode }) => {
+type Props = {
+  children: React.ReactNode;
+};
+const SectionComponent = ({ children }: Props) => {
   return (
-    <section className="my-12  px-8 py-4 leading-normal max-w-[45rem] md:mx-auto">
+    <section className="my-12 px-8 py-4 leading-normal max-w-[60rem] md:mx-auto">
       {children}
     </section>
   );
