@@ -74,11 +74,4 @@ export const projects: readonly Project[] = [
       "This is an app that enables a users upload files and then gets link that allows for the download of the file.",
     address: "https://abdqudus-easyshare.netlify.app/",
   },
-  {
-    title: "crown clothing ",
-    src: crown,
-    description:
-      "An e-commerce app that allows users check wears they like and also add them to add to cart ",
-    address: "https://crown-cloth-store.netlify.app/",
-  },
 ] as const;
