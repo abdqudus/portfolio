@@ -21,8 +21,10 @@ const ProjectSlider = ({ projects }: Props) => {
             />
           </div>
           <div className="sm:p-4">
-            <h3 className="mb-4">{project.title}</h3>
-            <p>{project.description}</p>
+            <h3 className="mb-4 uppercase text-[#FCE09B] font-bold">
+              {project.title}
+            </h3>
+            <p className="text-[#FCE09B] ">{project.description}</p>
             <div className="bg-[#FCE09B]  hover:scale-110 transition text-[#186F65] max-w-fit mt-5 px-4 py-2 rounded-[5px]">
               <a href={project.address} target="_blank">
                 Check it out
