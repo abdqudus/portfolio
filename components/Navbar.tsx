@@ -1,7 +1,12 @@
+"use client";
 import React from "react";
 import { links } from "@/lib/data";
 import Link from "next/link";
+import { useActiveSectionContext } from "./useCurrentSection";
+import classnames from "tailwindcss-classnames";
 const Navbar = () => {
+  const { activeSection } = useActiveSectionContext();
+  console.log(activeSection);
   return (
     <nav
       className="
@@ -14,7 +19,12 @@ const Navbar = () => {
       <ul className="flex sm:justify-between sm:w-full sm:px-2 justify-center items-center gap-3 flex-wrap">
         {links.map((link) => (
           <Link key={link.hash} href={link.hash}>
-            <li className="text-[#186F65] text-[1.2rem] hover:text-[#B2533E] transition">
+            <li
+              className={classnames(
+                `text-[#186F65] text-[1.2rem] hover:text-[#B2533E] transition`,
+                activeSection == link.name ? "text-[#B2533E]" : ""
+              )}
+            >
               {link.name}
             </li>
           </Link>

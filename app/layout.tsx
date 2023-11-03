@@ -1,3 +1,6 @@
+import ActiveSectionContextProvider, {
+  ActiveSectionContext,
+} from "@/components/useCurrentSection";
 import "./globals.css";
 import type { Metadata } from "next";
 import { Kanit } from "next/font/google";

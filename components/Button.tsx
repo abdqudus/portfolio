@@ -1,7 +1,7 @@
 import React, { ReactNode } from "react";
 type Props = {
   text: string;
-  icon: ReactNode;
+  icon?: ReactNode;
 };
 const Button = ({ text, icon }: Props) => {
   return (

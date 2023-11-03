@@ -4,9 +4,9 @@ import SectionHeader from "./SectionHeader";
 import SectionComponent from "./SectionComponent";
 const Technologies = () => {
   return (
-    <SectionComponent id="skills">
+    <SectionComponent id="skills" section="Skills">
       <SectionHeader title="Technologies i use" />
-      <div className="flex  justify-center px-8 pb-8 mt-16 gap-8 flex-wrap ">
+      <div className="flex px-8  justify-center  pb-8 mt-16 gap-8 flex-wrap ">
         {technologies.map((tech) => (
           <div className="flex flex-col items-center justify-center gap-2">
             <div
