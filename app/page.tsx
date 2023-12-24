@@ -1,5 +1,6 @@
 import About from "@/components/About";
 import ContactMe from "@/components/Contact";
+import Footer from "@/components/Footer";
 import Home from "@/components/Home";
 import Intro from "@/components/Intro";
 import Projects from "@/components/Projects";
@@ -17,6 +18,7 @@ const App = () => {
         <Technologies />
         <Projects />
         <ContactMe />
+        <Footer/>
       </ActiveSectionContextProvider>
     </div>
   );

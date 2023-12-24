@@ -32,7 +32,7 @@ const Intro = () => {
           frontend developer.
         </span>{" "}
         I enjoy building beautiful, performant, responsive and accessible
-        websites. My focus -for now- is React and Next.js.
+        websites. 
       </h1>
       <div className="flex flex-col mt-6 gap-6 items-center justify-center sm:flex-row sm:flex-wrap">
         <div className="px-6 py-3 bg-[#FCE09B] hover:bg-[#B5CB99]  text-[#186F65] flex justify-center items-center gap-2 hover:scale-[1.2] transition rounded-full font-semibold text-[1rem] sm:text-[1.2rem] ">
@@ -40,7 +40,7 @@ const Intro = () => {
           <RiContactsFill size={30} color={"#186F65"} />
         </div>
         <div className="px-6 py-3 hover:bg-[#B5CB99]  bg-[#FCE09B] hover: text-[#186F65] flex justify-center items-center gap-2 hover: rounded-full font-semibold text-[1rem] hover:scale-[1.2] transition  sm:text-[1.2rem]">
-          <a href="#contact">Download My CV</a>
+          <a  download href="/abdqudus_resume.pdf">Download My CV</a>
           <BsDownload size={30} />
         </div>
         <div className="flex gap-6">

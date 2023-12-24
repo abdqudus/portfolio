@@ -8,9 +8,7 @@ const About = () => {
     <SectionComponent id="about" section="About">
       <SectionHeader title="About me" />
       <p className="text-[#FCE09B] px-8  transition duration-500 ease-linear mb-2 text-[1.2rem] leading-normal md:text-[1.5rem] text-center md:leading-relaxed">
-        About two years ago, I ventured into the world of programming. It's been
-        a journey filled with challenges and, truth be told, that's where the
-        excitement lies.
+       Once again, I'm AbdQudus Gbadamosi. I'm a frontend developer. 
       </p>
       <p className="text-[#FCE09B] px-8 transition duration-500 ease-linear mb-2 text-[1.2rem] leading-normal md:text-[1.5rem] text-center md:leading-relaxed">
         My go-to tools for web development are React and Next.js, backed by

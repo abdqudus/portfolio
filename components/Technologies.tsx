@@ -8,7 +8,7 @@ const Technologies = () => {
       <SectionHeader title="Technologies i use" />
       <div className="flex px-8  justify-center  pb-8 mt-16 gap-8 flex-wrap ">
         {technologies.map((tech) => (
-          <div className="flex flex-col items-center justify-center gap-2">
+          <div  key={tech.name} className="flex flex-col items-center justify-center gap-2">
             <div
               className="rounded-full flex items-center justify-center w-[3.5em] h-[3.5em] bg-[#FCE09B]"
               key={tech.name}

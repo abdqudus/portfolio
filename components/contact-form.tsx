@@ -12,16 +12,15 @@ const ContactForm = () => {
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
   ) => {
     const { name, value } = e.target;
-    console.log(e.target.value);
     setFormData({ ...formData, [name]: value });
   };
   return (
     <form
       action="https://formspree.io/f/xknlyajv"
       method="POST"
-      className=" px-8"
+      className="pb-8 px-8"
     >
-      <div className="sm:grid grid-cols-2 grid-rows-5 gap-3 ">
+      <div className="sm:grid grid-cols-2 grid-rows-4 mb-4 gap-3 ">
         <div className="flex flex-col gap-2   mb-3 sm:mb-0">
           <label className="text-[#FCE09B]" htmlFor="name">
             Name:
@@ -68,7 +67,7 @@ const ContactForm = () => {
         Send
       </button>
     </form>
-  );
+  )
 };
 
 export default ContactForm;
