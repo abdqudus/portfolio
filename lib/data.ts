@@ -3,6 +3,7 @@ import { FaHtml5, FaReact } from "react-icons/fa";
 import { IoLogoCss3 } from "react-icons/io";
 import letsChat from "../public/chat-app.png";
 import easyShare from "../public/easy-share.png";
+import interactiveBoard from '../public/interactive board.png'
 import crown from "../public/crown.png";
 import {
   SiTailwindcss,
@@ -73,5 +74,12 @@ export const projects: readonly Project[] = [
     description:
       "This is an app that enables a users upload files and then gets link that allows for the download of the file.",
     address: "https://abdqudus-easyshare.netlify.app/",
+  },
+  {
+    title: "interactive board share",
+    src: interactiveBoard,
+    description:
+      "This is an app that allows users to draw on boards and share with others in real time ",
+    address: "https://interactive-board-seven.vercel.app/",
   },
 ] as const;
