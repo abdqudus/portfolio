@@ -4,6 +4,7 @@ import { IoLogoCss3 } from "react-icons/io";
 import letsChat from "../public/chat-app.png";
 import easyShare from "../public/easy-share.png";
 import interactiveBoard from '../public/interactive board.png'
+import bookMarkApp from '../public/bookmark.png'
 import crown from "../public/crown.png";
 import {
   SiTailwindcss,
@@ -81,5 +82,12 @@ export const projects: readonly Project[] = [
     description:
       "This is an app that allows users to draw on boards and share with others in real time ",
     address: "https://interactive-board-seven.vercel.app/",
+  },
+  {
+    title: "iBookmark App",
+    src: bookMarkApp,
+    description:
+      "This is an app that allows users to organize their bookmarks ",
+    address: "https://abdqudus-bookmark.netlify.app/",
   },
 ] as const;
